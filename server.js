@@ -4,7 +4,7 @@
 // ═══════════════════════════════════════════════════════
 
 const express = require('express');
-const stripe = require('stripe')('sk_test_TON_SECRET_ICI'); // Remplace par ta nouvelle clé secrète
+const stripe = const stripe = require('stripe')(process.env.STRIPE_SECRET_KEY);
 const cors = require('cors');
 
 const app = express();
